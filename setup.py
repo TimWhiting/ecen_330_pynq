@@ -15,5 +15,6 @@ setup(
     package_data = {
     '' : ['*.bit','*.tcl','*.py','*.so','*.elf'],
     },
+	data_files = [(os.path.join('/home/xilinx/jupyter_notebooks/ecen_330',root.replace('notebooks/','')), [os.path.join(root, f) for f in files]) for root, dirs, files in os.walk('notebooks/')],
     description = "New custom overlay for PYNQ-Z1"
 )
