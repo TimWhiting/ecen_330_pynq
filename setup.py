@@ -12,6 +12,7 @@ setup(
     license = 'All rights reserved.',
     author = "Tim Whiting",
     author_email = "tim@whitings.com",
+	include_package_data = True,
     packages = ['ecen_330'],
     package_data = {
     '' : ['*.bit','*.tcl','*.py','*.so','*.elf'],
