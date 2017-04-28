@@ -3,6 +3,7 @@ import subprocess
 import sys
 import shutil
 import ecen_330
+import os
 
 setup(
     name = "ecen_330",
