@@ -14,10 +14,7 @@ class ecen330:
 		self.bitstream_name="top.bit"
 		self.bitstream_path=os.path.join(ECEN330_BIT_DIR, self.bitstream_name)
 		if PL.bitfile_name != self.bitstream_path:
-			if load_overlay:
-				Overlay(self.bitstream_path).download()
-			else:
-				raise RuntimeError("Incorrect Overlay loaded")     
+			Overlay(self.bitstream_path).download()   
 		
 	def getExecutables(self):
 		names = ""
