@@ -17,10 +17,7 @@ class ecen330:
             if load_overlay:
                 Overlay(self.bitstream_path).download()
             else:
-                raise RuntimeError("Incorrect Overlay loaded")
-        
-    def __del__(self):
-        
+                raise RuntimeError("Incorrect Overlay loaded")     
         
     def getExecutables(self):
         names = ""
