@@ -8,7 +8,7 @@ ECEN330_ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 ECEN330_EXE_DIR = os.path.join(ECEN330_ROOT_DIR, 'executables')
 ECEN330_BIT_DIR = os.path.join(ECEN330_ROOT_DIR, 'bitstream')
 
-class ecen_330:
+class ecen330:
     
     def __init__(self):
 		self.bitstream_name="top.bit"
