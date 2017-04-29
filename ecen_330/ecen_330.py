@@ -28,8 +28,8 @@ class ecen330:
         
     def execute(self,name):
         fullName = ECEN330_EXE_DIR + name
-        process = subprocess.Popen([fullName],stdin=None,stdout=subprocess.PIPE,stderr=None,shell=False)
-        if process.stderr:
-            print process.stderr.readlines()
+        process = subprocess.Popen([fullName],stdout=PIPE)
+        if process.stdout:
+            print process.stdout.readlines()
     
 
