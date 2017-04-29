@@ -31,5 +31,5 @@ class ecen330:
 		process = subprocess.Popen([fullName],stdout=PIPE)
 		if process.stdout:
 			for line in proc.stdout:
-				print line
+				print(line)
 
